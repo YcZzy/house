@@ -1,69 +1,10 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "cloudfunctionRoot": "cloudfunctions/",
-  "miniprogramRoot": "miniprogram/",
-  "setting": {
-    "urlCheck": true,
-    "es6": true,
-    "enhance": true,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": true,
-    "coverView": true,
-    "nodeModules": true,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": true,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": false,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "enableEngineNative": false,
-    "bundle": false,
-    "useIsolateContext": true,
-    "useCompilerModule": false,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-  },
-  "compileType": "miniprogram",
-  "libVersion": "2.9.4",
-  "appid": "wx892f2174d0293f28",
-  "projectname": "%E7%A7%9F%E6%88%BF%E5%B0%8F%E7%A8%8B%E5%BA%8F",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "isGameTourist": false,
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "setting": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
-      "currentL": -1,
       "list": []
     },
     "gamePlugin": {
@@ -229,6 +170,18 @@
           "id": -1,
           "name": "Adminpackage/managerAdmin/managerAdmin",
           "pathName": "Adminpackage/managerAdmin/managerAdmin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Companypackage/rentOutEntrust/rentOutEntrust",
+          "pathName": "Companypackage/rentOutEntrust/rentOutEntrust",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Companypackage/saleEntrust/saleEntrust",
+          "pathName": "Companypackage/saleEntrust/saleEntrust",
           "query": "",
           "scene": null
         }

@@ -7,7 +7,7 @@ const {
 
 
 cloud.init({
-    env: 'dev-house-0tiax',
+    env: 'ldh-xinaa-5gz2fcg991b34172',
     traceUser: true,
 })
 const db = cloud.database()

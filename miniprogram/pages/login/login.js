@@ -25,7 +25,7 @@ Page({
         console.log(e.detail.userInfo)
         console.log(e.detail.rawData)
         let that = this
-        if (e.detail.errMsg == "getUserInfo:ok") {
+        if (e.detail.errMsg == "getUserProfile:ok") {
             let userInfo = e.detail.userInfo
             var nickName = userInfo.nickName
             var avatarUrl = userInfo.avatarUrl

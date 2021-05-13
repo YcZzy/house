@@ -1,29 +1,12 @@
 <!--pages/home/home.wxml-->
-<!-- 功能选项a -->
-<view class="select-box">
-	<view data-url="../../Companypackage/newHouse/newHouse" bindtap="Navigate">
-		<image src="../image/newHouse.png"></image>
-	</view>
-	<view data-url="../../Companypackage/secondHandHouse/secondHandHouse" bindtap="Navigate">
-		<image src="../image/secondHand.png"></image>
-	</view>
-	<view data-url="../../Companypackage/rentingHouse/rentingHouse" bindtap="Navigate">
-		<image src="../image/rentinghouse.png"></image>
-	</view>
-</view>
-
-<!-- 功能选项b -->
-<view class="header-box">
-	<view class="header-row">
-		<view class="header-cell" wx:for="{{headerList}}" wx:key='key' data-url="{{item.url}}" bindtap="Navigate">
-			<view>
-				<image src="{{item.icon}}"></image>
-			</view>
-			<view class="font-size-12 text-color">{{item.text}}</view>
-		</view>
-	</view>
-</view>
-
+<scroll-view scroll-y class="scrollPage">
+  <view class='nav-list'>
+    <navigator open-type="navigate" hover-class='none' url="../../Companypackage/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key="navkey">
+      <view class="nav-title">{{item.title}}</view>
+    </navigator>
+  </view>
+</scroll-view>
+ 
 <!-- bannner -->
 <view class="banner-box">
 	<image src="../image/banner.png"></image>
@@ -33,7 +16,6 @@
 <view class="noticeBar-box">
 	<van-notice-bar class="noticeBar" left-icon="volume-o" color="#181818;" backgroundColor="#ffffff" text="{{notice}}" />
 </view>
-
 <view class="recommendation-box">
 	<view class="recommendation-text">店长推荐</view>
 </view>

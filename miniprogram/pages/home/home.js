@@ -6,6 +6,42 @@ Page({
      * 页面的初始数据
      */
     data: {
+        elements: [{
+            title: '新房',
+            name: 'newHouse',
+            color: 'cyan',
+            icon: 'newsfill'
+          },
+          {
+            title: '二手房',
+            name: 'secondHandHouse',
+            color: 'blue',
+            icon: 'colorlens'
+          },
+          {
+            title: '租房 ',
+            name: 'rentingHouse',
+            color: 'mauve',
+            icon: 'icon'
+          },
+          {
+            title: '公司资质',
+            name: 'qualification',
+            color: 'pink',
+            icon: 'btn'
+          },
+          {
+            title: '房贷计算',
+            name: 'calculator',
+            color: 'brown',
+            icon: 'tagfill'
+          },{
+            title: '联系员工',
+            name: 'Contact',
+            color: 'orange',
+            icon: 'icloading'
+          },
+        ],
         headerList: [
             {
                 "id": "#",
@@ -82,7 +118,7 @@ Page({
             success(res) {
                 console.log(res)
                 if (res.authSetting['scope.userInfo']) {
-                    wx.getUserInfo({
+                    wx.getUserProfile({
                         success: function (res) {
                             // console.log(res)
                             var userInfo = res.userInfo
