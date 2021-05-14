@@ -20,10 +20,12 @@
 	<view class="card">
 		<view class="card-left">
 			<image mode="scaleToFill" src="{{item.photoInfo[0]}}"></image>
-			<view class="card-tag-box card-tag card-tag-mark card-tag-bg">推荐</view>
 		</view>
 		<view class="card-right">
-			<view class="card-title">{{item.title}}</view>
+			<view class="card-title">
+				<view class="bkhf bg-red}">必看好房</view>
+				{{item.title}}
+			</view>
 			<view class="card-content-box">
 				<view class="card-content-box-row-bottom">
 					<view class="content-tag bg-tag bg-cyan light" wx:for="{{item.FormData.Tags}}" wx:for-item="tag" wx:key='key'>{{tag}}</view>
