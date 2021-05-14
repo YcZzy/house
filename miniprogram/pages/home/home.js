@@ -6,6 +6,8 @@ Page({
      * 页面的初始数据
      */
     data: {
+        TabCur: 0,
+        scrollLeft:0,
         elements: [{
             title: '新房',
             name: 'newHouse',
@@ -71,7 +73,12 @@ Page({
         // 默认公告信息
         notice:'欢迎使用 邦房-团结南路店 这里有大量的好房源等您来挑选~ 同时也欢迎发布你的房源信息到这里来~'
     },
-
+    tabSelect(e) {
+        this.setData({
+          TabCur: e.currentTarget.dataset.id,
+          scrollLeft: (e.currentTarget.dataset.id-1)*60
+        })
+    },
     /** 
      * 生命周期函数--监听页面加载
      */
@@ -118,7 +125,7 @@ Page({
             success(res) {
                 console.log(res)
                 if (res.authSetting['scope.userInfo']) {
-                    wx.getUserProfile({
+                    wx.getUserInfo({
                         success: function (res) {
                             // console.log(res)
                             var userInfo = res.userInfo
@@ -308,7 +315,6 @@ Page({
                 }
             })
     },
-
     // 获取房源数据列表
     QueryHose(page) {
         // 如果没有设置推荐，则显示所有数据

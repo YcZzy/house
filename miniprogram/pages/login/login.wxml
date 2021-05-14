@@ -32,13 +32,13 @@
 
 
 <!-- <view wx:if="{{showAuth}}">
-	<button open-type="getUserProfile" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+	<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
 </view> -->
 
 <view class="auth-box" wx:if="{{showAuth}}">
 	<view class="card-box">
 		<view class="card-content">
-			<button open-type="getUserProfile" lang="zh_CN" bindgetuserinfo="onGotUserInfo">确 定</button>
+			<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">确 定</button>
 		</view>
 		<image src='../image/modal.png'></image>
 	</view>

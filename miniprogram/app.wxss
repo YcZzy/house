@@ -27,17 +27,17 @@ page {
     justify-content: center;
     box-sizing: border-box;
     /* padding: 0rpx 16rpx; *//* height: 48rpx; *//* padding: 0.2em 0; */
-    margin-left: 5px;
-    margin-top: 3px;
+    margin-right: 5px;
     border-radius: 2px;
+    padding: 1px 4px;
     font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 
 /* 颜色 */
 
 .bg-cyan.light {
-    color: #1cbbb4;
-    background: #d2f1f0;
+    color: #768289;
+    background: #f2f1f6;
 }
 
 .bg-white {
